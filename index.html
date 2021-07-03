@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js" defer></script> 
+  
+    <title>Frontend Mentor | Calculator App</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <h1 class="title">Calc</h1>
+            <div class="theme">
+                <div class="theme-label">theme</div>
+                <div class="theme-toggle-container">
+                    <label for="theme-toggle-1" class="theme-toggle-label">1</label>
+                    <input type="radio" class="theme-toggle-input" name="theme" value="no-preference" id="theme-toggle-1">
+                    <label for="theme-toggle-2" class="theme-toggle-label">2</label>
+                    <input type="radio" class="theme-toggle-input" name="theme" value="light" id="theme-toggle-2">
+                    <label for="theme-toggle-3" class="theme-toggle-label">3</label>
+                    <input type="radio" class="theme-toggle-input" name="theme" value="dark" id="theme-toggle-3">
+                    <span class="theme-toggle-indicator"></span>
+                </div>
+            </div>
+        </div>
+        <div class="display">0</div>
+        <div class="keypad">
+            <button class="btn" data-key="7">7</button>
+            <button class="btn" data-key="8">8</button>
+            <button class="btn" data-key="9">9</button>
+            <button class="btn btn-delete" data-action="delete" data-key="Backspace,Delete">del</button>
+            <button class="btn" data-key="4">4</button>
+            <button class="btn" data-key="5">5</button>
+            <button class="btn" data-key="6">6</button>
+            <button class="btn" data-action="add" data-key="+">&plus;</button>
+            <button class="btn" data-key="1">1</button>
+            <button class="btn" data-key="2">2</button>
+            <button class="btn" data-key="3">3</button>
+            <button class="btn" data-action="subtract" data-key="-">&minus;</button>
+            <button class="btn" data-action="decimal" data-key=".">.</button>
+            <button class="btn" data-key="0">0</button>
+            <button class="btn" data-action="divide" data-key="/">/</button>
+            <button class="btn" data-action="multiply" data-key="*">&times;</button>
+            <button class="btn btn-reset" data-action="reset" data-key="Escape">reset</button>
+            <button class="btn btn-equals" data-action="equals" data-key="=,Enter,Return">=</button>
+        </div>
+  
+        <div class="attribution">
+            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+            <p>Coded by <a href="http://www.aaronromanick.com/">Aaron Romanick</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

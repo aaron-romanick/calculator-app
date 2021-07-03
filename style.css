@@ -1,0 +1,268 @@
+:root {
+    --font-family: 'Spartan', sans-serif;
+    --white: hsl(0, 0%, 100%);
+    --theme-transitions: color 100ms linear,
+                         background-color 100ms linear;
+
+    --bg-primary: hsl(222, 26%, 31%);
+    --bg-secondary: hsl(223, 31%, 20%);
+    --bg-tertiary: hsl(224, 36%, 15%);
+
+    --button-bg-primary: hsl(30, 25%, 89%);
+    --button-bg-secondary: hsl(225, 21%, 49%);
+    --button-bg-tertiary: hsl(6, 63%, 50%);
+
+    --button-shadow-primary: hsl(28, 16%, 65%);
+    --button-shadow-secondary: hsl(224, 28%, 35%);
+    --button-shadow-tertiary: hsl(6, 70%, 34%);
+
+    --box-shadow-color: var(--button-shadow-primary);
+
+    --text-top: var(--white);
+    --text-numbers: hsl(221, 14%, 31%);
+    --text-clears: var(--white);
+    --text-equals: var(--white);
+
+    --text-attribution: var(--text-top);
+    --text-attribution-links: var(--button-bg-tertiary);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background: var(--bg-primary);
+    font-family: var(--font-family);
+    font-size: 32px;
+    line-height: 1;
+}
+
+html[data-theme='light'] {
+    --bg-primary: hsl(0, 0%, 90%);
+    --bg-secondary: hsl(0, 5%, 81%);
+    --bg-tertiary: hsl(0, 0%, 93%);
+
+    --button-bg-primary: hsl(45, 7%, 89%);
+    --button-bg-secondary: hsl(185, 42%, 37%);
+    --button-bg-tertiary: hsl(25, 98%, 40%);
+
+    --button-shadow-primary: hsl(35, 11%, 61%);
+    --button-shadow-secondary: hsl(185, 58%, 25%);
+    --button-shadow-tertiary: hsl(25, 99%, 27%);
+
+    --text-primary: hsl(60, 10%, 19%);
+    --text-secondary: var(--text-primary);
+    --text-tertiary: var(--text-secondary);
+    --text-quaternary: var(--text-secondary);
+
+    --text-top: hsl(221, 14%, 31%);
+    --text-numbers: var(--text-top);
+    --text-clears: var(--white);
+    --text-equals: var(--white);
+}
+
+html[data-theme='dark'] {
+    --bg-primary: hsl(268, 75%, 9%);
+    --bg-secondary: hsl(268, 71%, 12%);
+    --bg-tertiary: var(--bg-secondary);
+
+    --button-bg-primary: hsl(268, 47%, 21%);
+    --button-bg-secondary: hsl(281, 89%, 26%);
+    --button-bg-tertiary: hsl(176, 100%, 44%);
+
+    --button-shadow-primary: hsl(290, 70%, 36%);
+    --button-shadow-secondary: hsl(285, 91%, 52%);
+    --button-shadow-tertiary: hsl(177, 92%, 70%);
+
+    --text-top: hsl(52, 100%, 62%);
+    --text-numbers: var(--text-top);
+    --text-clears: var(--white);
+    --text-equals: hsl(198, 20%, 13%);
+}
+
+button {
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--font-family);
+    font-size: inherit;
+    margin: 0;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.calculator {
+    margin: 0.3rem auto 0;
+    min-width: 11.7rem;
+    max-width: 17rem;
+    padding: 0.75rem 0.75rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .calculator {
+        margin-top: 2rem;
+    }
+}
+
+.header {
+    color: var(--text-top);
+    display: flex;
+    margin-bottom: 1rem;
+    transition: var(--theme-transitions);
+}
+
+.title {
+    font-size: 0.8rem;
+    text-transform: lowercase;
+}
+
+/* START THEME SWITCHER */
+
+.theme {
+    display: flex;
+    margin-left: auto;
+}
+
+.theme-label {
+    align-self: flex-end;
+    font-size: 0.35rem;
+    padding: 0.4em 1.75em;
+    text-transform: uppercase;
+}
+
+.theme-toggle-container {
+    background-color: var(--bg-secondary);
+    border-radius: 1.5em;
+    display: flex;
+    font-size: 0.35rem;
+	padding: 0.05em;
+    position: relative;
+    transition: var(--theme-transitions);
+    width: 2rem;
+    z-index: 1;
+}
+
+.theme-toggle-label {
+    padding: 0.2em;
+    text-align: center;
+    cursor: pointer;
+    flex-basis: 33.3%;
+    margin-top: -0.6rem;
+}
+
+.theme-toggle-indicator {
+    background-color: var(--button-bg-tertiary);
+    border-radius: 50%;
+    height: 0.5rem;
+    left: 0.4em;
+    position: absolute;
+    transition: var(--theme-transitions);
+    top: 0.45em;
+    width: 0.5rem;
+    transition: transform 200ms linear;
+    z-index: -1;
+}
+
+.theme-toggle-input,
+.theme-toggle-input:not(:checked),
+.theme-toggle-input:checked {
+	appearance: none;
+    border: 0 none;
+	outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.theme-toggle-input#theme-toggle-2:checked ~ .theme-toggle-indicator {
+    transform: translateX(1.8em);
+}
+.theme-toggle-input#theme-toggle-3:checked ~ .theme-toggle-indicator {
+    transform: translateX(3.7em);
+}
+
+/* END THEME SWITCHER */
+
+.display {
+    background-color: var(--bg-tertiary);
+    border-radius: 0.33rem;
+    color: var(--text-top);
+    margin-bottom: 0.75rem;
+    padding: 0.8rem;
+    text-align: right;
+    transition: var(--theme-transitions);
+}
+
+.keypad {
+    background-color: var(--bg-secondary);
+    border-radius: 0.33rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    transition: var(--theme-transitions);
+}
+
+.btn {
+    align-items: center;
+    background-color: var(--button-bg-primary);
+    box-shadow: inset 0 -0.125rem var(--box-shadow-color);
+    border-radius: 0.2rem;
+    color: var(--text-numbers);
+    display: flex;
+    flex-basis: 21%;
+    height: 2rem;
+    margin: 2%;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: var(--theme-transitions);
+}
+.btn.btn__active,
+.btn:hover {
+    filter: brightness(85%);
+}
+
+.btn.btn__active {
+    box-shadow: inset 0 -0.0625rem var(--box-shadow-color);
+    height: calc(2rem - 0.0625rem);
+    transform: translateY(0.0625rem);
+}
+
+.btn-delete,
+.btn-reset,
+.btn-equals {
+    font-size: 0.5rem;
+}
+
+.btn-delete,
+.btn-reset {
+    --box-shadow-color: var(--button-shadow-secondary);
+    color: var(--text-clears);
+    background: var(--button-bg-secondary);
+}
+
+.btn-equals {
+    --box-shadow-color: var(--button-shadow-tertiary);
+    color: var(--text-equals);
+    background: var(--button-bg-tertiary);
+}
+
+.btn-reset,
+.btn-equals {
+    flex-basis: 46%;
+}
+
+.attribution {
+    color: var(--text-attribution);
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--text-attribution-links);
+}
