@@ -22,9 +22,6 @@
     --text-numbers: hsl(221, 14%, 31%);
     --text-clears: var(--white);
     --text-equals: var(--white);
-
-    --text-attribution: var(--text-top);
-    --text-attribution-links: var(--button-bg-tertiary);
 }
 
 * {
@@ -259,15 +256,4 @@ header {
 .btn-reset,
 .btn-equals {
     flex-basis: 46%;
-}
-
-.attribution {
-    color: var(--text-attribution);
-    font-size: 11px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.attribution a {
-    color: var(--text-attribution-links);
 }
