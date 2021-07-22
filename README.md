@@ -33,8 +33,8 @@ Users should be able to:
 
 ### <a name="links"></a>Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-themeable-calculator-app-using-css-and-javascript-8odysCMOs](https://www.frontendmentor.io/solutions/responsive-themeable-calculator-app-using-css-and-javascript-8odysCMOs)
+- Live Site URL: [https://nisenihonjin.github.io/calculator-app/](https://nisenihonjin.github.io/calculator-app/)
 
 ## <a name="my-process"></a>My process
 
