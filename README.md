@@ -69,7 +69,7 @@ As for the JavaScript aspect, I'm disappointed that I couldn't work in exponenti
 ## <a name="author"></a>Author
 
 - Website - [Aaron Romanick](https://www.aaronromanick.com)
-- Frontend Mentor - [@dapperdanman1400](https://www.frontendmentor.io/profile/dapperdanman1400)
+- Frontend Mentor - [@nisenihonjin](https://www.frontendmentor.io/profile/nisenihonjin)
 
 ## <a name="acknowledgments"></a>Acknowledgments
 
