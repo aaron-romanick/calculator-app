@@ -16,8 +16,6 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## <a name="overview"></a>Overview
 
 ### <a name="the-challenge"></a>The challenge
