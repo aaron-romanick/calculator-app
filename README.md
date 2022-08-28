@@ -34,7 +34,7 @@ Users should be able to:
 ### <a name="links"></a>Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-themeable-calculator-app-using-css-and-javascript-8odysCMOs](https://www.frontendmentor.io/solutions/responsive-themeable-calculator-app-using-css-and-javascript-8odysCMOs)
-- Live Site URL: [https://nisenihonjin.github.io/calculator-app/](https://nisenihonjin.github.io/calculator-app/)
+- Live Site URL: [https://aaron-romanick.github.io/calculator-app/](https://aaron-romanick.github.io/calculator-app/)
 
 ## <a name="my-process"></a>My process
 
@@ -69,7 +69,7 @@ As for the JavaScript aspect, I'm disappointed that I couldn't work in exponenti
 ## <a name="author"></a>Author
 
 - Website - [Aaron Romanick](https://www.aaronromanick.com)
-- Frontend Mentor - [@nisenihonjin](https://www.frontendmentor.io/profile/nisenihonjin)
+- Frontend Mentor - [@aaron-romanick](https://www.frontendmentor.io/profile/aaron-romanick)
 
 ## <a name="acknowledgments"></a>Acknowledgments
 
