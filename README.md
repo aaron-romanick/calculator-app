@@ -29,7 +29,7 @@ Users should be able to:
 
 ### <a name="screenshot"></a>Screenshot
 
-![Calculator App (Default Theme)](./images/screenshot.png)
+![Calculator App (Default Theme)](./screenshot.png)
 
 ### <a name="links"></a>Links
 
